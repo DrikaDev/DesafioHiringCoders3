@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(80, 80, 80);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url("img/pexels-photo-414548.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+} 
+
+header{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.menu-logo{
+    width: 15rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    border-bottom: 3px dashed #808080;
+}
+
+a:hover{
+    text-shadow: 1px 1px 10px black;
+}
+
+.logo{
+    width: 130px;
+    border-radius: 100px;
+    margin-top: 1rem;
+}
+
+main{
+    width: 50%;
+    height: 20vh;
+    text-align: center;
+    position: absolute;
+    top: 1rem;
+    left: 18rem;
+}
+
+.container .name h1{
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.container .name h5{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#arrow{
+    width: 100%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#animation{
+   transition: 300ms;
+   animation-name: piscar;
+   animation-duration: 1s;
+   animation-timing-function: steps(3, start) ;
+   animation-delay: 1s;
+   animation-iteration-count: infinite; 
+}
+
+@keyframes piscar{
+    to{
+        visibility: hidden;
+    }
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.form p{
+    border-bottom: 3px dashed #808080;
+    width: 55%;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    transition: 1s all;
+    font-weight: 500;
+}
+
+.form p:hover{
+    transform: scale(1.1);
+}
+
+form{
+    width: 100%;
+    height: 3rem;
+    margin-top: 15px;
+}
+
+form input{
+    width: 18rem;
+    height: 2.5rem;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 1s all;
+}
+
+form input:hover{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+form button{
+    border-radius: 0px 5px 5px 0px;
+    width: 8rem;
+    height: 2.5rem;
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+form button:hover{
+    text-shadow: 1px 1px 5px black;
+    transform: scale(1.1);
+}

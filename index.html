@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6882db86fb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Desafio Kai Pimenta</title>
+</head>
+<body>
+    <header>
+        <div class="menu-logo">
+            <ul>
+                <li>
+                    <a href="https://github.com/DrikaDev" target="_blank">github</a>
+                </li>
+                <li>
+                    <a href="mailto:adriguti.adriana@hotmail.com" target="_blank">email</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/11970371923" target="_blank">whatsapp</a>
+                </li>
+            </ul>
+            
+            <figure>
+                <img class= "logo" src="img/meulogo.png" alt="logo AG">            
+            </figure>
+        </div>
+        
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Adriana Gutierrez</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick= "displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>Olá! Sou Adriana Gutierrez, formada em Gestão de RH, em Secretariado e pós graduada em Tradução
+                   Português/Inglês. Meu inglês é avançado e tenho mais de 20 anos de experiência em rotinas administrativas.
+                   Atualmente estudo Técnico de Front-End no VaiNaWeb com previsão de término para Set/2022.</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Gostaria de entrar em contato comigo?</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="digite aqui seu email :)">
+                    <button type="submit">clique aqui</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
